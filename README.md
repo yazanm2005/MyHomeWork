@@ -1,20 +1,31 @@
 # Basic Call Center Analytics System
 
-A simple Java-based call center analytics system developed for the software engineering assignment.
+A simple Java application developed for the Software Engineering assignment.
 
-## Features
-- Store customer service calls
-- Analyze customer sentiment using simple rule-based logic
-- Detect common customer issues
-- Detect whether a call was resolved
-- Display an analysis result in the console
+## What the system does
 
-## Technologies
-- Java
-- Git
-- GitHub
+The program simulates a basic call center analytics system. It receives a customer call transcript and performs simple rule-based analysis to identify:
+
+- Customer sentiment
+- Customer issue
+- Resolution status
+
+## Example
+
+Input transcript:
+
+"My food arrived cold and the delivery was late. The operator offered a replacement meal."
+
+Example result:
+
+```
+Sentiment: NEGATIVE
+Issue: COLD_FOOD
+Resolved: YES
+```
 
 ## Project Structure
+
 ```
 src/
 ├── Main.java
@@ -26,4 +37,16 @@ src/
     └── CallManager.java
 ```
 
-This is the basic Java version of the call center analytics idea. The original project is a larger AWS serverless implementation.
+## Technologies
+
+- Java
+- Git
+- GitHub
+
+## Development Process
+
+The project uses Git for version control. Development was performed on a separate `develop` branch and then submitted to `main` through a Pull Request.
+
+## Relation to the Original Project
+
+This is the basic Java implementation of the call center analytics idea. The larger project uses AWS serverless services and AI-based analysis, while this assignment version focuses on the core functionality using Java.
